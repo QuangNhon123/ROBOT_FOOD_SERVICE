@@ -1,0 +1,20 @@
+slam_toolbox:
+  ros__parameters:
+
+    # 1. ĐỒNG BỘ THỜI GIAN (Cực kỳ quan trọng)
+    use_sim_time: true # Đặt FALSE nếu chạy robot thật (STM32 + Pi). Đặt TRUE nếu chạy Gazebo
+
+    # 2. KHUẦN KHUNG TỌA ĐỘ (Viết thường, KHÔNG CÓ DẤU / Ở ĐẦU)
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_footprint # Hoặc base_link tùy theo file URDF của bạn
+    scan_topic: /scan
+
+    # 3. CHẾ ĐỘ HOẠT ĐỘNG
+    mode: mapping
+
+    # 4. TẦN SỐ VẼ BẢN ĐỒ
+    debug_logging: false
+    throttle_scans: 1
+    transform_publish_period: 0.02
+    map_update_interval: 1.0
