@@ -159,6 +159,26 @@
             </collision>
         </link>
     </xacro:macro>
+    <gazebo reference="left_wheel">
+  <mu1>100.0</mu1>
+  <mu2>100.0</mu2>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+
+<gazebo reference="right_wheel">
+  <mu1>100.0</mu1>
+  <mu2>100.0</mu2>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+    
+     <gazebo reference="base_link">
+  <mu1>0.8</mu1>
+  <mu2>0.8</mu2>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
 
     <xacro:tray prefix="tray_level_1" z_offset="0.35"/>
     <xacro:tray prefix="tray_level_2" z_offset="0.65"/>

@@ -16,7 +16,7 @@ setup(
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'config'), glob('config/*')),
         (os.path.join('share', package_name, 'map'), glob('map/*')),
-        (os.path.join('share', package_name, 'worlds'), glob('worlds/.world*')),
+        (os.path.join('share', package_name, 'worlds'), glob('worlds/*.world')),
         (os.path.join('share', package_name, 'worlds/gazebo_worlds'), glob('worlds/gazebo_worlds/*')),
     ],
     install_requires=['setuptools'],
