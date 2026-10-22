@@ -19,27 +19,23 @@ def generate_launch_description():
         ),
         launch_arguments={
             'map': map_file,
-            'use_sim_time': 'True',
+            'use_sim_time': 'true',
             'params_file': params_file,
-            'autostart': 'True',
+            'autostart': 'true',
         }.items()
     )
 
-    navigation = TimerAction(
-        period=5.0,
-        actions=[
-            IncludeLaunchDescription(
+    navigation = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
                     os.path.join(nav2_share, 'launch', 'navigation_launch.py')
                 ),
                 launch_arguments={
-                    'use_sim_time': 'True',
+                    'use_sim_time': 'true',
                     'params_file': params_file,
-                    'autostart': 'True',
+                    'autostart': 'true',
                 }.items()
             )
-        ]
-    )
+
 
     return LaunchDescription([
         localization,
