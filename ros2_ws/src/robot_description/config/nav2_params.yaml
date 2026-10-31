@@ -161,8 +161,8 @@ local_costmap:
       robot_base_frame: base_footprint
       transform_tolerance: 0.5
 
-      update_frequency: 5.0
-      publish_frequency: 2.0
+      update_frequency: 10.0
+      publish_frequency: 5.0
 
       rolling_window: true
       width: 3
