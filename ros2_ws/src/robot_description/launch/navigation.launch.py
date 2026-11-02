@@ -27,7 +27,7 @@ def generate_launch_description():
 
     navigation = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
-                    os.path.join(nav2_share, 'launch', 'navigation_launch.py')
+                    os.path.join(pkg_share, 'launch', 'navigation_with_monitor.launch.py')
                 ),
                 launch_arguments={
                     'use_sim_time': 'true',
