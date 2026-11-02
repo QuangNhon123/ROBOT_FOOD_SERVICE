@@ -6,26 +6,28 @@
     <link name="obstacle_link">
       <pose>0 0 0.3 0 0 0</pose>
 
-      <inertial>
-        <mass>1.0</mass>
-        <inertia>
-          <ixx>0.0325</ixx>
-          <iyy>0.0325</iyy>
-          <izz>0.01125</izz>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyz>0</iyz>
-        </inertia>
-      </inertial>
+      
+<inertial>
+  <mass>1.0</mass>
+  <inertia>
+    <ixx>0.060625</ixx>
+    <iyy>0.060625</iyy>
+    <izz>0.06125</izz>
+    <ixy>0</ixy>
+    <ixz>0</ixz>
+    <iyz>0</iyz>
+  </inertia>
+</inertial>
 
-      <collision name="collision">
-        <geometry>
-          <cylinder>
-            <radius>0.35</radius>
-            <length>0.6</length>
-          </cylinder>
-        </geometry>
-      </collision>
+<collision name="collision">
+  <geometry>
+    <cylinder>
+      <radius>0.35</radius>
+      <length>0.6</length>
+    </cylinder>
+  </geometry>
+</collision>
+
 
       <visual name="visual">
         <geometry>
