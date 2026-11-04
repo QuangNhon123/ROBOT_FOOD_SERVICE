@@ -12,7 +12,7 @@ def generate_launch_description():
 
     # 1. Tim thu muc package da cai dat
     package_dir = get_package_share_directory(
-        'dynamic_obstacle_demo'
+         'robot_description'
     )
 
     # 2. Tim file mo hinh vat can
@@ -44,7 +44,7 @@ def generate_launch_description():
 
     # 5. Khoi chay node dieu khien vat can
     controller = Node(
-        package='dynamic_obstacle_demo',
+        package='robot_description',
         executable='moving_obstacle',
         name='moving_obstacle_controller',
         output='screen',
