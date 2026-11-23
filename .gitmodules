@@ -1,0 +1,3 @@
+[submodule "ros2_ws/src/m-explore-ros2"]
+	path = ros2_ws/src/m-explore-ros2
+	url = https://github.com/robo-friends/m-explore-ros2.git
